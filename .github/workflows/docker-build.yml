@@ -15,8 +15,8 @@ jobs:
           context: .
           push: true
           tags: |
-            your-dockerhub-username/image-name:latest
-            your-dockerhub-username/image-name:${{ github.sha }}
+            outcastveron/fiveserver:latest
+            outcastveron/fiveserver:${{ github.sha }}
           secrets: |
             "username=${{ secrets.DOCKERHUB_USERNAME }}"
             "password=${{ secrets.DOCKERHUB_TOKEN }}"
